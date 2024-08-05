@@ -1,0 +1,26 @@
+Index    : https://consnmuaj.osiztech.com/templates/PTOP/
+Dashboard:https://consnmuaj.osiztech.com/templates/PTOP/dashboard.html
+Deposit :https://consnmuaj.osiztech.com/templates/PTOP/deposit.html
+DepositConfirmation://consnmuaj.osiztech.com/templates/PTOP/depositconfirmation.html
+Deposit Crypto :https://consnmuaj.osiztech.com/templates/PTOP/depositcrypto.html
+Mail Verification://consnmuaj.osiztech.com/templates/PTOP/enabelmailverification.html
+Login://consnmuaj.osiztech.com/templates/PTOP/login.html
+MarketPrice://consnmuaj.osiztech.com/templates/PTOP/marketprice.html
+New Password://consnmuaj.osiztech.com/templates/PTOP/newpassword.html
+OTP://consnmuaj.osiztech.com/templates/PTOP/otp.html
+PV://consnmuaj.osiztech.com/templates/PTOP/personalverification.html
+phonenumber://consnmuaj.osiztech.com/templates/PTOP/phonenumber.html
+privaypolicy://consnmuaj.osiztech.com/templates/PTOP/privaypolicy.html
+securityc://consnmuaj.osiztech.com/templates/PTOP/securityc.html
+securitycode://consnmuaj.osiztech.com/templates/PTOP/securitycode.html
+settings://consnmuaj.osiztech.com/templates/PTOP/settings.html
+signup://consnmuaj.osiztech.com/templates/PTOP/signup.html
+terms://consnmuaj.osiztech.com/templates/PTOP/terms.html
+trade://consnmuaj.osiztech.com/templates/PTOP/trade.html
+tradingfee://consnmuaj.osiztech.com/templates/PTOP/tradingfee.html
+transactionhistory://consnmuaj.osiztech.com/templates/PTOP/transactionhistory.html
+wallertoverview://consnmuaj.osiztech.com/templates/PTOP/wallertoverview.html
+withdrawconfirmation://consnmuaj.osiztech.com/templates/PTOP/withdrawconfirmation.html
+withdrawcrypto://consnmuaj.osiztech.com/templates/PTOP/withdrawcrypto.html
+withdrawcryptosecurity://consnmuaj.osiztech.com/templates/PTOP/withdrawcryptosecurity.html
+withdrawfiat.html://consnmuaj.osiztech.com/templates/PTOP/withdrawfiat.html

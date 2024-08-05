@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P-TO-P | Personal Verification</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CUSTOM SCROLL -->
+    <link rel="stylesheet" href="assets/vendor/css/jquery.mCustomScrollbar.css">
+    <!-- SLIDER - CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/slick.css">
+    <link rel="stylesheet" href="assets/vendor/css/slick-theme.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/ptop.css">
+</head>
+
+<body>
+    <main class="main-grid-wrapper container-fluid pt-3" id="sideBar">
+        <div class="side-bar">
+
+            <div class="side-bar-logo d-none d-lg-block">
+                <a href="#">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="text-center trade-side my-3">
+                <a class="primary-btn px-5 ">
+                    TRADE
+                </a>
+                <button class="close-btn d-block d-lg-none" onclick="sideBar()">
+                    x
+                </button>
+            </div>
+            <ul class="side-bar-components">
+                <li class="active">
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" id="opacity" fill="url(#grad1)"
+                                    d="M18.3333 7.09999V3.31666C18.3333 2.14166 17.8 1.66666 16.475 1.66666H13.1083C11.7833 1.66666 11.25 2.14166 11.25 3.31666V7.09166C11.25 8.27499 11.7833 8.74166 13.1083 8.74166H16.475C17.8 8.74999 18.3333 8.27499 18.3333 7.09999Z"
+                                    fill="white" />
+                                <path
+                                    d="M18.3333 16.475V13.1083C18.3333 11.7833 17.8 11.25 16.475 11.25H13.1083C11.7833 11.25 11.25 11.7833 11.25 13.1083V16.475C11.25 17.8 11.7833 18.3333 13.1083 18.3333H16.475C17.8 18.3333 18.3333 17.8 18.3333 16.475Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.75033 7.09999V3.31666C8.75033 2.14166 8.21699 1.66666 6.89199 1.66666H3.52533C2.20033 1.66666 1.66699 2.14166 1.66699 3.31666V7.09166C1.66699 8.27499 2.20033 8.74166 3.52533 8.74166H6.89199C8.21699 8.74999 8.75033 8.27499 8.75033 7.09999Z"
+                                    fill="white" />
+                                <path opacity="0.4" id="opacity" fill="url(#grad1)"
+                                    d="M8.75033 16.475V13.1083C8.75033 11.7833 8.21699 11.25 6.89199 11.25H3.52533C2.20033 11.25 1.66699 11.7833 1.66699 13.1083V16.475C1.66699 17.8 2.20033 18.3333 3.52533 18.3333H6.89199C8.21699 18.3333 8.75033 17.8 8.75033 16.475Z"
+                                    fill="white" />
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#FC466B;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3F5EFB ;stop-opacity:1" />
+                                </linearGradient>
+                            </svg>
+                        </span>
+                        <h1>Dashboard</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" id="opacity"
+                                    d="M15.2747 4.72499L5.49141 14.5083C5.12475 14.875 4.50807 14.825 4.20807 14.3916C3.17474 12.8833 2.56641 11.1 2.56641 9.26664V5.60832C2.56641 4.92499 3.08308 4.14999 3.71641 3.89166L8.35808 1.99166C9.40808 1.55832 10.5748 1.55832 11.6248 1.99166L14.9914 3.36665C15.5497 3.59165 15.6914 4.30832 15.2747 4.72499Z"
+                                    fill="#9CA0C1" />
+                                <path
+                                    d="M16.0587 5.86667C16.6003 5.40833 17.4253 5.79999 17.4253 6.50832V9.26666C17.4253 13.3417 14.467 17.1583 10.4253 18.275C10.1503 18.35 9.85035 18.35 9.56701 18.275C8.38368 17.9417 7.28366 17.3833 6.34199 16.65C5.94199 16.3417 5.90034 15.7583 6.25034 15.4C8.067 13.5417 13.3837 8.125 16.0587 5.86667Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+                        </span>
+                        <h1>Security</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M15 15.7166H14.3667C13.7 15.7166 13.0667 15.975 12.6 16.4416L11.175 17.85C10.525 18.4916 9.46668 18.4916 8.81668 17.85L7.39166 16.4416C6.925 15.975 6.28333 15.7166 5.625 15.7166H5C3.61667 15.7166 2.5 14.6083 2.5 13.2417V4.14998C2.5 2.78331 3.61667 1.675 5 1.675H15C16.3833 1.675 17.5 2.78331 17.5 4.14998V13.2417C17.5 14.6 16.3833 15.7166 15 15.7166Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M10.0003 8.67498C11.0726 8.67498 11.942 7.80571 11.942 6.73335C11.942 5.661 11.0726 4.79167 10.0003 4.79167C8.92792 4.79167 8.05859 5.661 8.05859 6.73335C8.05859 7.80571 8.92792 8.67498 10.0003 8.67498Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M12.2336 12.55C12.9086 12.55 13.3003 11.8 12.9253 11.2417C12.3586 10.4 11.2586 9.83333 10.0003 9.83333C8.74197 9.83333 7.64196 10.4 7.0753 11.2417C6.7003 11.8 7.09198 12.55 7.76698 12.55H12.2336Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+
+                        </span>
+                        <h1>Identification</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M18.125 5.60829C18.125 5.44163 18.0584 5.28332 17.9417 5.16665L14.8417 2.06663C14.6 1.82496 14.2 1.82496 13.9583 2.06663C13.7167 2.30829 13.7167 2.70829 13.9583 2.94996L16 4.99163H2.5C2.15833 4.99163 1.875 5.27497 1.875 5.61663C1.875 5.9583 2.15833 6.24163 2.5 6.24163H15.9917L13.9583 8.27497C13.7167 8.51664 13.7167 8.91663 13.9583 9.1583C14.0833 9.2833 14.2417 9.34166 14.4 9.34166C14.5584 9.34166 14.7167 9.2833 14.8417 9.1583L17.9333 6.06667C17.9917 6.00833 18.0417 5.93333 18.075 5.84999C18.075 5.84166 18.075 5.8333 18.0833 5.82497C18.1083 5.74997 18.125 5.68329 18.125 5.60829Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M17.5 13.7667H4.00833L6.04167 11.7333C6.28333 11.4917 6.28333 11.0917 6.04167 10.85C5.8 10.6083 5.4 10.6083 5.15834 10.85L2.06665 13.9416C2.00832 14 1.95833 14.075 1.925 14.1583C1.925 14.1666 1.92499 14.175 1.91666 14.1833C1.89166 14.25 1.875 14.325 1.875 14.4C1.875 14.5667 1.94164 14.725 2.05831 14.8416L5.15834 17.9417C5.28334 18.0667 5.44164 18.125 5.59998 18.125C5.75831 18.125 5.91667 18.0667 6.04167 17.9417C6.28333 17.7 6.28333 17.3 6.04167 17.0583L3.99999 15.0167H17.5C17.8417 15.0167 18.125 14.7333 18.125 14.3917C18.125 14.05 17.8417 13.7667 17.5 13.7667Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+
+                        </span>
+                        <h1>Transactions</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M2.29152 15.5417C1.94985 15.5417 1.66652 15.2583 1.66652 14.9167V10.1667C1.62485 7.90834 2.46652 5.775 4.03318 4.175C5.59985 2.58334 7.69985 1.70834 9.95818 1.70834C14.5749 1.70834 18.3332 5.46667 18.3332 10.0833V14.8333C18.3332 15.175 18.0499 15.4583 17.7082 15.4583C17.3665 15.4583 17.0832 15.175 17.0832 14.8333V10.0833C17.0832 6.15834 13.8915 2.95834 9.95818 2.95834C8.03318 2.95834 6.24985 3.7 4.92485 5.05C3.59152 6.40834 2.88318 8.21667 2.91652 10.15V14.9083C2.91652 15.2583 2.64152 15.5417 2.29152 15.5417Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M4.95033 10.375H4.84199C3.09199 10.375 1.66699 11.8 1.66699 13.55V15.1167C1.66699 16.8667 3.09199 18.2917 4.84199 18.2917H4.95033C6.70033 18.2917 8.12533 16.8667 8.12533 15.1167V13.55C8.12533 11.8 6.70033 10.375 4.95033 10.375Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M15.1583 10.375H15.05C13.3 10.375 11.875 11.8 11.875 13.55V15.1167C11.875 16.8667 13.3 18.2917 15.05 18.2917H15.1583C16.9083 18.2917 18.3333 16.8667 18.3333 15.1167V13.55C18.3333 11.8 16.9083 10.375 15.1583 10.375Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+
+                        </span>
+                        <h1>Support</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- BANNER -->
+        <section class="security-wrapper">
+            <div class="banner-spring">
+                <img src="assets/images/spring.svg" class="img-fluid" alt="">
+            </div>
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="side-bar-logo d-lg-none d-block">
+                        <a href="#">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="current-logo">
+                        <button class="arrow-btn" onclick="sideBar()">
+                            <img src="assets/images/arrow-left.svg" alt="">
+                        </button>
+                        <h2>Personal Verification</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <img src="./assets/images/menu.png" alt="">
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="currentpage-wrapper">
+                            <div class="header-comp-details">
+                                <div class="thumb">
+                                    <button>
+                                        <img src="assets/images/profile.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="button-g">
+                                    <button class="primary-btn">
+                                        Wallet
+                                    </button>
+                                    <button>
+                                        <img src="assets/images/setting-2.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="assets/images/notification.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="assets/images/logout.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="main-content-wrapper">
+                <div class="grid-container-wrapper">
+                    <div class="grid-header-container">
+                        <div class="step-wizard-wrapper">
+                            <div class="step-wizard">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                            data-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">
+                                            ID Proof 1
+                                            <div class="circle-svg">
+                                                <svg height="12" width="12">
+                                                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3"
+                                                        fill="red" />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                            data-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">ID Proof 2</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                            data-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Video KYC</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill"
+                                            data-target="#pills-details" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">Bank Details</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <div class="personal-bg">
+                                            <div class="heading">
+                                                <h2>Personal Information</h2>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Select Country
+                                                                </label>
+                                                                <div class="input-group">
+                                                                    <select class="custom-select" id="" required="">
+                                                                        <option value="">Select Country</option>
+                                                                        <option value="1">TET - Tether</option>
+                                                                        <option value="2">DOG - Doge</option>
+                                                                        <option value="3">ETH - Ethereum</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Enter your Name as per your PAN Card
+                                                                </label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Your Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Date of Birth
+                                                                </label>
+                                                                <div class="input-group">
+                                                                    <input type="Password" class="form-control"
+                                                                        placeholder="Password">
+                                                                    <div class="eye-btn">
+                                                                        <svg width="20" height="20" viewBox="0 0 20 20"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M6.66797 1.66667V4.16667"
+                                                                                stroke="white" stroke-miterlimit="10"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                            <path d="M13.332 1.66667V4.16667"
+                                                                                stroke="white" stroke-miterlimit="10"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                            <path d="M2.91797 7.575H17.0846"
+                                                                                stroke="white" stroke-miterlimit="10"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                            <path
+                                                                                d="M17.5 7.08333V14.1667C17.5 16.6667 16.25 18.3333 13.3333 18.3333H6.66667C3.75 18.3333 2.5 16.6667 2.5 14.1667V7.08333C2.5 4.58333 3.75 2.91667 6.66667 2.91667H13.3333C16.25 2.91667 17.5 4.58333 17.5 7.08333Z"
+                                                                                stroke="white" stroke-miterlimit="10"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                            <path d="M9.99803 11.4167H10.0055"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                            <path d="M6.91209 11.4167H6.91957"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                            <path d="M6.91209 13.9167H6.91957"
+                                                                                stroke="white" stroke-width="2"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"></path>
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Enter PAN Card Number
+                                                                </label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 flex-d gap-25">
+                                                            <div class="upload-wrapper">
+                                                                <div class="thumb">
+                                                                    <img src="assets/images/ide.jpg" id="output" alt="">
+                                                                </div>
+                                                                <div class="thumb-btn">
+                                                                    <input type="file" accept="image/*" name="image"
+                                                                        id="file" onchange="loadFile(event)"
+                                                                        style="display: none;">
+                                                                    <label class="svg-label" for="file"
+                                                                        style="cursor: pointer;">
+                                                                        <svg width="20" height="17" viewBox="0 0 20 17"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M1.21799 5.09204L1.88624 5.43253L1.21799 5.09204ZM2.0918 4.21799L2.43229 4.88624L2.0918 4.21799ZM2.0918 15.782L2.43229 15.1137L2.0918 15.782ZM1.21799 14.908L0.549732 15.2485H0.549732L1.21799 14.908ZM18.7822 14.908L18.114 14.5675L18.7822 14.908ZM17.9078 15.782L17.5673 15.1137L17.9078 15.782ZM18.7822 5.09204L18.114 5.43253L18.7822 5.09204ZM17.9078 4.21799L18.2483 3.54973L17.9078 4.21799ZM6.49072 2.52866L5.77921 2.29149L6.49072 2.52866ZM6.59607 2.22974L5.90392 1.9409L6.59607 2.22974ZM8.29443 1.00541L8.23929 0.257442L8.29443 1.00541ZM7.27637 3.99377L7.35982 3.24843H7.35982L7.27637 3.99377ZM6.40967 2.7913L5.67618 2.63477L6.40967 2.7913ZM13.5098 2.52869L14.2213 2.29152L13.5098 2.52869ZM13.5908 2.7913L12.8573 2.94783V2.94783L13.5908 2.7913ZM12.724 3.99377L12.6405 3.24843L12.724 3.99377ZM13.4043 2.22974L12.7121 2.51858L13.4043 2.22974ZM11.7056 1.00541L11.6504 1.75338L11.7056 1.00541ZM10 12.25C8.75736 12.25 7.75 11.2426 7.75 10H6.25C6.25 12.0711 7.92893 13.75 10 13.75V12.25ZM7.75 10C7.75 8.75736 8.75736 7.75 10 7.75V6.25C7.92893 6.25 6.25 7.92893 6.25 10H7.75ZM10 7.75C11.2426 7.75 12.25 8.75736 12.25 10H13.75C13.75 7.92893 12.0711 6.25 10 6.25V7.75ZM12.25 10C12.25 11.2426 11.2426 12.25 10 12.25V13.75C12.0711 13.75 13.75 12.0711 13.75 10H12.25ZM18.25 7.20001V12.8H19.75V7.20001H18.25ZM15.8002 15.25H4.2002V16.75H15.8002V15.25ZM1.75 12.8V7.20001H0.25V12.8H1.75ZM4.2002 4.75H15.8002V3.25H4.2002V4.75ZM1.75 7.20001C1.75 6.62758 1.75058 6.24337 1.77476 5.9475C1.79822 5.66038 1.8401 5.5231 1.88624 5.43253L0.549732 4.75155C0.377889 5.08881 0.310777 5.44546 0.279739 5.82535C0.249417 6.19647 0.25 6.65234 0.25 7.20001H1.75ZM4.2002 3.25C3.65251 3.25 3.19656 3.24942 2.82534 3.27974C2.44541 3.31077 2.08861 3.37787 1.7513 3.54973L2.43229 4.88624C2.52281 4.84012 2.66016 4.79822 2.94745 4.77476C3.24344 4.75058 3.62777 4.75 4.2002 4.75V3.25ZM1.88624 5.43253C2.00618 5.19714 2.19728 5.00598 2.43229 4.88624L1.7513 3.54973C1.23366 3.81348 0.813285 4.2343 0.549732 4.75155L1.88624 5.43253ZM4.2002 15.25C3.62779 15.25 3.24345 15.2494 2.94746 15.2252C2.66018 15.2018 2.52282 15.1599 2.43229 15.1137L1.7513 16.4502C2.0886 16.6221 2.44538 16.6892 2.82532 16.7202C3.19655 16.7506 3.6525 16.75 4.2002 16.75V15.25ZM0.25 12.8C0.25 13.3477 0.249417 13.8035 0.279739 14.1747C0.310777 14.5546 0.37789 14.9112 0.549732 15.2485L1.88624 14.5675C1.8401 14.4769 1.79822 14.3396 1.77476 14.0525C1.75058 13.7566 1.75 13.3724 1.75 12.8H0.25ZM2.43229 15.1137C2.19725 14.994 2.00617 14.8028 1.88624 14.5675L0.549732 15.2485C0.813301 15.7657 1.2337 16.1865 1.7513 16.4502L2.43229 15.1137ZM18.25 12.8C18.25 13.3725 18.2495 13.7567 18.2253 14.0526C18.2019 14.3398 18.1601 14.477 18.114 14.5675L19.4505 15.2485C19.6224 14.9111 19.6894 14.5544 19.7204 14.1746C19.7506 13.8035 19.75 13.3476 19.75 12.8H18.25ZM15.8002 16.75C16.3479 16.75 16.8037 16.7506 17.1747 16.7202C17.5546 16.6892 17.9111 16.6221 18.2483 16.4502L17.5673 15.1137C17.4767 15.1599 17.3395 15.2018 17.0525 15.2252C16.7567 15.2494 16.3726 15.25 15.8002 15.25V16.75ZM18.114 14.5675C17.9943 14.8023 17.8028 14.9937 17.5673 15.1137L18.2483 16.4502C18.7654 16.1868 19.1867 15.7662 19.4505 15.2485L18.114 14.5675ZM19.75 7.20001C19.75 6.65241 19.7506 6.19654 19.7204 5.82547C19.6894 5.44562 19.6224 5.08889 19.4505 4.75155L18.114 5.43253C18.1601 5.52301 18.2019 5.66022 18.2253 5.94738C18.2495 6.2433 18.25 6.62751 18.25 7.20001H19.75ZM15.8002 4.75C16.3726 4.75 16.7567 4.75058 17.0525 4.77476C17.3395 4.79821 17.4767 4.84008 17.5673 4.88624L18.2483 3.54973C17.9111 3.37791 17.5545 3.31078 17.1747 3.27974C16.8036 3.24942 16.3479 3.25 15.8002 3.25V4.75ZM19.4505 4.75155C19.1867 4.2338 18.7654 3.81323 18.2483 3.54973L17.5673 4.88624C17.8028 5.00624 17.9943 5.19764 18.114 5.43253L19.4505 4.75155ZM12.449 3.25H7.55078V4.75H12.449V3.25ZM8.61133 1.75H11.3886V0.25H8.61133V1.75ZM7.20224 2.76583C7.2574 2.60034 7.27307 2.55487 7.28822 2.51858L5.90392 1.9409C5.86236 2.04049 5.8267 2.149 5.77921 2.29149L7.20224 2.76583ZM8.61133 0.25C8.46114 0.25 8.34692 0.249508 8.23929 0.257442L8.34957 1.75338C8.38879 1.75049 8.43689 1.75 8.61133 1.75V0.25ZM7.28822 2.51858C7.4697 2.0837 7.8799 1.78801 8.34957 1.75338L8.23929 0.257442C7.20556 0.333649 6.303 0.984568 5.90392 1.9409L7.28822 2.51858ZM7.55078 3.25C7.475 3.25 7.42812 3.24997 7.39303 3.24934C7.35815 3.24871 7.35314 3.24768 7.35982 3.24843L7.19292 4.73912C7.30095 4.75121 7.42733 4.75 7.55078 4.75V3.25ZM5.77921 2.29149C5.7404 2.40793 5.6989 2.52832 5.67618 2.63477L7.14315 2.94783C7.14169 2.95469 7.14225 2.94976 7.15279 2.91616C7.16337 2.88246 7.17822 2.83788 7.20224 2.76583L5.77921 2.29149ZM7.35982 3.24843C7.21292 3.23198 7.1123 3.09238 7.14315 2.94783L5.67618 2.63477C5.46024 3.64669 6.16465 4.62399 7.19292 4.73912L7.35982 3.24843ZM12.7983 2.76586C12.8222 2.83778 12.8371 2.88236 12.8476 2.91597C12.8581 2.94945 12.8587 2.95451 12.8573 2.94783L14.3242 2.63477C14.3015 2.52841 14.2602 2.40843 14.2213 2.29152L12.7983 2.76586ZM12.449 4.75C12.5723 4.75 12.6994 4.75122 12.8074 4.73912L12.6405 3.24843C12.6473 3.24767 12.6422 3.24871 12.6071 3.24934C12.5718 3.24997 12.5247 3.25 12.449 3.25V4.75ZM12.8573 2.94783C12.8881 3.09228 12.7875 3.23197 12.6405 3.24843L12.8074 4.73912C13.8356 4.624 14.5402 3.64679 14.3242 2.63477L12.8573 2.94783ZM14.2213 2.29152C14.1735 2.14821 14.1379 2.0403 14.0964 1.9409L12.7121 2.51858C12.7274 2.55505 12.7434 2.60119 12.7983 2.76586L14.2213 2.29152ZM11.3886 1.75C11.563 1.75 11.6112 1.75049 11.6504 1.75338L11.7607 0.257442C11.6531 0.249508 11.5388 0.25 11.3886 0.25V1.75ZM14.0964 1.9409C13.6973 0.984409 12.7943 0.333637 11.7607 0.257442L11.6504 1.75338C12.1203 1.78802 12.5307 2.08385 12.7121 2.51858L14.0964 1.9409Z"
+                                                                                fill="#bb4f9d"></path>
+                                                                        </svg>
+                                                                    </label>
+                                                                </div>
+                                                                <script>
+                                                                    var loadFile = function (event) {
+                                                                        var image = document.getElementById('output');
+                                                                        image.src = URL.createObjectURL(event.target.files[0]);
+                                                                    };
+                                                                </script>
+                                                            </div>
+                                                            <div class="up-heading">
+                                                                <h2>Upload PAN Card Front Side</h2>
+                                                                <p>
+                                                                    Format: JPEG (.jpg or .jpeg) or PNG format,
+                                                                    Size : Less than 5MB
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 my-2">
+                                                            <button class="primary-btn w-100">
+                                                                Submit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <div class="personal-bg">
+                                            <div class="heading">
+                                                <h2>ID Proof</h2>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Select Country
+                                                                </label>
+                                                                <div class="input-group">
+                                                                    <select class="custom-select" id="" required="">
+                                                                        <option value="">Select Country</option>
+                                                                        <option value="1">TET - Tether</option>
+                                                                        <option value="2">DOG - Doge</option>
+                                                                        <option value="3">ETH - Ethereum</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Enter your Name as per your PAN Card
+                                                                </label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Your Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="">
+                                                                    Enter PAN Card Number
+                                                                </label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Enter Number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 flex-d gap-25">
+                                                                <div class="upload-wrapper">
+                                                                    <div class="thumb">
+                                                                        <img src="assets/images/ide.jpg" id="output"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="thumb-btn">
+                                                                        <input type="file" accept="image/*" name="image"
+                                                                            id="file" onchange="loadFile(event)"
+                                                                            style="display: none;">
+                                                                        <label class="svg-label" for="file"
+                                                                            style="cursor: pointer;">
+                                                                            <svg width="20" height="17"
+                                                                                viewBox="0 0 20 17" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path
+                                                                                    d="M1.21799 5.09204L1.88624 5.43253L1.21799 5.09204ZM2.0918 4.21799L2.43229 4.88624L2.0918 4.21799ZM2.0918 15.782L2.43229 15.1137L2.0918 15.782ZM1.21799 14.908L0.549732 15.2485H0.549732L1.21799 14.908ZM18.7822 14.908L18.114 14.5675L18.7822 14.908ZM17.9078 15.782L17.5673 15.1137L17.9078 15.782ZM18.7822 5.09204L18.114 5.43253L18.7822 5.09204ZM17.9078 4.21799L18.2483 3.54973L17.9078 4.21799ZM6.49072 2.52866L5.77921 2.29149L6.49072 2.52866ZM6.59607 2.22974L5.90392 1.9409L6.59607 2.22974ZM8.29443 1.00541L8.23929 0.257442L8.29443 1.00541ZM7.27637 3.99377L7.35982 3.24843H7.35982L7.27637 3.99377ZM6.40967 2.7913L5.67618 2.63477L6.40967 2.7913ZM13.5098 2.52869L14.2213 2.29152L13.5098 2.52869ZM13.5908 2.7913L12.8573 2.94783V2.94783L13.5908 2.7913ZM12.724 3.99377L12.6405 3.24843L12.724 3.99377ZM13.4043 2.22974L12.7121 2.51858L13.4043 2.22974ZM11.7056 1.00541L11.6504 1.75338L11.7056 1.00541ZM10 12.25C8.75736 12.25 7.75 11.2426 7.75 10H6.25C6.25 12.0711 7.92893 13.75 10 13.75V12.25ZM7.75 10C7.75 8.75736 8.75736 7.75 10 7.75V6.25C7.92893 6.25 6.25 7.92893 6.25 10H7.75ZM10 7.75C11.2426 7.75 12.25 8.75736 12.25 10H13.75C13.75 7.92893 12.0711 6.25 10 6.25V7.75ZM12.25 10C12.25 11.2426 11.2426 12.25 10 12.25V13.75C12.0711 13.75 13.75 12.0711 13.75 10H12.25ZM18.25 7.20001V12.8H19.75V7.20001H18.25ZM15.8002 15.25H4.2002V16.75H15.8002V15.25ZM1.75 12.8V7.20001H0.25V12.8H1.75ZM4.2002 4.75H15.8002V3.25H4.2002V4.75ZM1.75 7.20001C1.75 6.62758 1.75058 6.24337 1.77476 5.9475C1.79822 5.66038 1.8401 5.5231 1.88624 5.43253L0.549732 4.75155C0.377889 5.08881 0.310777 5.44546 0.279739 5.82535C0.249417 6.19647 0.25 6.65234 0.25 7.20001H1.75ZM4.2002 3.25C3.65251 3.25 3.19656 3.24942 2.82534 3.27974C2.44541 3.31077 2.08861 3.37787 1.7513 3.54973L2.43229 4.88624C2.52281 4.84012 2.66016 4.79822 2.94745 4.77476C3.24344 4.75058 3.62777 4.75 4.2002 4.75V3.25ZM1.88624 5.43253C2.00618 5.19714 2.19728 5.00598 2.43229 4.88624L1.7513 3.54973C1.23366 3.81348 0.813285 4.2343 0.549732 4.75155L1.88624 5.43253ZM4.2002 15.25C3.62779 15.25 3.24345 15.2494 2.94746 15.2252C2.66018 15.2018 2.52282 15.1599 2.43229 15.1137L1.7513 16.4502C2.0886 16.6221 2.44538 16.6892 2.82532 16.7202C3.19655 16.7506 3.6525 16.75 4.2002 16.75V15.25ZM0.25 12.8C0.25 13.3477 0.249417 13.8035 0.279739 14.1747C0.310777 14.5546 0.37789 14.9112 0.549732 15.2485L1.88624 14.5675C1.8401 14.4769 1.79822 14.3396 1.77476 14.0525C1.75058 13.7566 1.75 13.3724 1.75 12.8H0.25ZM2.43229 15.1137C2.19725 14.994 2.00617 14.8028 1.88624 14.5675L0.549732 15.2485C0.813301 15.7657 1.2337 16.1865 1.7513 16.4502L2.43229 15.1137ZM18.25 12.8C18.25 13.3725 18.2495 13.7567 18.2253 14.0526C18.2019 14.3398 18.1601 14.477 18.114 14.5675L19.4505 15.2485C19.6224 14.9111 19.6894 14.5544 19.7204 14.1746C19.7506 13.8035 19.75 13.3476 19.75 12.8H18.25ZM15.8002 16.75C16.3479 16.75 16.8037 16.7506 17.1747 16.7202C17.5546 16.6892 17.9111 16.6221 18.2483 16.4502L17.5673 15.1137C17.4767 15.1599 17.3395 15.2018 17.0525 15.2252C16.7567 15.2494 16.3726 15.25 15.8002 15.25V16.75ZM18.114 14.5675C17.9943 14.8023 17.8028 14.9937 17.5673 15.1137L18.2483 16.4502C18.7654 16.1868 19.1867 15.7662 19.4505 15.2485L18.114 14.5675ZM19.75 7.20001C19.75 6.65241 19.7506 6.19654 19.7204 5.82547C19.6894 5.44562 19.6224 5.08889 19.4505 4.75155L18.114 5.43253C18.1601 5.52301 18.2019 5.66022 18.2253 5.94738C18.2495 6.2433 18.25 6.62751 18.25 7.20001H19.75ZM15.8002 4.75C16.3726 4.75 16.7567 4.75058 17.0525 4.77476C17.3395 4.79821 17.4767 4.84008 17.5673 4.88624L18.2483 3.54973C17.9111 3.37791 17.5545 3.31078 17.1747 3.27974C16.8036 3.24942 16.3479 3.25 15.8002 3.25V4.75ZM19.4505 4.75155C19.1867 4.2338 18.7654 3.81323 18.2483 3.54973L17.5673 4.88624C17.8028 5.00624 17.9943 5.19764 18.114 5.43253L19.4505 4.75155ZM12.449 3.25H7.55078V4.75H12.449V3.25ZM8.61133 1.75H11.3886V0.25H8.61133V1.75ZM7.20224 2.76583C7.2574 2.60034 7.27307 2.55487 7.28822 2.51858L5.90392 1.9409C5.86236 2.04049 5.8267 2.149 5.77921 2.29149L7.20224 2.76583ZM8.61133 0.25C8.46114 0.25 8.34692 0.249508 8.23929 0.257442L8.34957 1.75338C8.38879 1.75049 8.43689 1.75 8.61133 1.75V0.25ZM7.28822 2.51858C7.4697 2.0837 7.8799 1.78801 8.34957 1.75338L8.23929 0.257442C7.20556 0.333649 6.303 0.984568 5.90392 1.9409L7.28822 2.51858ZM7.55078 3.25C7.475 3.25 7.42812 3.24997 7.39303 3.24934C7.35815 3.24871 7.35314 3.24768 7.35982 3.24843L7.19292 4.73912C7.30095 4.75121 7.42733 4.75 7.55078 4.75V3.25ZM5.77921 2.29149C5.7404 2.40793 5.6989 2.52832 5.67618 2.63477L7.14315 2.94783C7.14169 2.95469 7.14225 2.94976 7.15279 2.91616C7.16337 2.88246 7.17822 2.83788 7.20224 2.76583L5.77921 2.29149ZM7.35982 3.24843C7.21292 3.23198 7.1123 3.09238 7.14315 2.94783L5.67618 2.63477C5.46024 3.64669 6.16465 4.62399 7.19292 4.73912L7.35982 3.24843ZM12.7983 2.76586C12.8222 2.83778 12.8371 2.88236 12.8476 2.91597C12.8581 2.94945 12.8587 2.95451 12.8573 2.94783L14.3242 2.63477C14.3015 2.52841 14.2602 2.40843 14.2213 2.29152L12.7983 2.76586ZM12.449 4.75C12.5723 4.75 12.6994 4.75122 12.8074 4.73912L12.6405 3.24843C12.6473 3.24767 12.6422 3.24871 12.6071 3.24934C12.5718 3.24997 12.5247 3.25 12.449 3.25V4.75ZM12.8573 2.94783C12.8881 3.09228 12.7875 3.23197 12.6405 3.24843L12.8074 4.73912C13.8356 4.624 14.5402 3.64679 14.3242 2.63477L12.8573 2.94783ZM14.2213 2.29152C14.1735 2.14821 14.1379 2.0403 14.0964 1.9409L12.7121 2.51858C12.7274 2.55505 12.7434 2.60119 12.7983 2.76586L14.2213 2.29152ZM11.3886 1.75C11.563 1.75 11.6112 1.75049 11.6504 1.75338L11.7607 0.257442C11.6531 0.249508 11.5388 0.25 11.3886 0.25V1.75ZM14.0964 1.9409C13.6973 0.984409 12.7943 0.333637 11.7607 0.257442L11.6504 1.75338C12.1203 1.78802 12.5307 2.08385 12.7121 2.51858L14.0964 1.9409Z"
+                                                                                    fill="#bb4f9d"></path>
+                                                                            </svg>
+                                                                        </label>
+                                                                    </div>
+                                                                    <script>
+                                                                        var loadFile = function (event) {
+                                                                            var image = document.getElementById('output');
+                                                                            image.src = URL.createObjectURL(event.target.files[0]);
+                                                                        };
+                                                                    </script>
+                                                                </div>
+                                                                <div class="up-heading">
+                                                                    <h2>Upload PAN Card Front Side</h2>
+                                                                    <p>
+                                                                        Format: JPEG (.jpg or .jpeg) or PNG format,
+                                                                        Size : Less than 5MB
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 flex-d gap-25">
+                                                                <div class="upload-wrapper">
+                                                                    <div class="thumb">
+                                                                        <img src="assets/images/ide.jpg" id="output"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="thumb-btn">
+                                                                        <input type="file" accept="image/*" name="image"
+                                                                            id="file" onchange="loadFile(event)"
+                                                                            style="display: none;">
+                                                                        <label class="svg-label" for="file"
+                                                                            style="cursor: pointer;">
+                                                                            <svg width="20" height="17"
+                                                                                viewBox="0 0 20 17" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path
+                                                                                    d="M1.21799 5.09204L1.88624 5.43253L1.21799 5.09204ZM2.0918 4.21799L2.43229 4.88624L2.0918 4.21799ZM2.0918 15.782L2.43229 15.1137L2.0918 15.782ZM1.21799 14.908L0.549732 15.2485H0.549732L1.21799 14.908ZM18.7822 14.908L18.114 14.5675L18.7822 14.908ZM17.9078 15.782L17.5673 15.1137L17.9078 15.782ZM18.7822 5.09204L18.114 5.43253L18.7822 5.09204ZM17.9078 4.21799L18.2483 3.54973L17.9078 4.21799ZM6.49072 2.52866L5.77921 2.29149L6.49072 2.52866ZM6.59607 2.22974L5.90392 1.9409L6.59607 2.22974ZM8.29443 1.00541L8.23929 0.257442L8.29443 1.00541ZM7.27637 3.99377L7.35982 3.24843H7.35982L7.27637 3.99377ZM6.40967 2.7913L5.67618 2.63477L6.40967 2.7913ZM13.5098 2.52869L14.2213 2.29152L13.5098 2.52869ZM13.5908 2.7913L12.8573 2.94783V2.94783L13.5908 2.7913ZM12.724 3.99377L12.6405 3.24843L12.724 3.99377ZM13.4043 2.22974L12.7121 2.51858L13.4043 2.22974ZM11.7056 1.00541L11.6504 1.75338L11.7056 1.00541ZM10 12.25C8.75736 12.25 7.75 11.2426 7.75 10H6.25C6.25 12.0711 7.92893 13.75 10 13.75V12.25ZM7.75 10C7.75 8.75736 8.75736 7.75 10 7.75V6.25C7.92893 6.25 6.25 7.92893 6.25 10H7.75ZM10 7.75C11.2426 7.75 12.25 8.75736 12.25 10H13.75C13.75 7.92893 12.0711 6.25 10 6.25V7.75ZM12.25 10C12.25 11.2426 11.2426 12.25 10 12.25V13.75C12.0711 13.75 13.75 12.0711 13.75 10H12.25ZM18.25 7.20001V12.8H19.75V7.20001H18.25ZM15.8002 15.25H4.2002V16.75H15.8002V15.25ZM1.75 12.8V7.20001H0.25V12.8H1.75ZM4.2002 4.75H15.8002V3.25H4.2002V4.75ZM1.75 7.20001C1.75 6.62758 1.75058 6.24337 1.77476 5.9475C1.79822 5.66038 1.8401 5.5231 1.88624 5.43253L0.549732 4.75155C0.377889 5.08881 0.310777 5.44546 0.279739 5.82535C0.249417 6.19647 0.25 6.65234 0.25 7.20001H1.75ZM4.2002 3.25C3.65251 3.25 3.19656 3.24942 2.82534 3.27974C2.44541 3.31077 2.08861 3.37787 1.7513 3.54973L2.43229 4.88624C2.52281 4.84012 2.66016 4.79822 2.94745 4.77476C3.24344 4.75058 3.62777 4.75 4.2002 4.75V3.25ZM1.88624 5.43253C2.00618 5.19714 2.19728 5.00598 2.43229 4.88624L1.7513 3.54973C1.23366 3.81348 0.813285 4.2343 0.549732 4.75155L1.88624 5.43253ZM4.2002 15.25C3.62779 15.25 3.24345 15.2494 2.94746 15.2252C2.66018 15.2018 2.52282 15.1599 2.43229 15.1137L1.7513 16.4502C2.0886 16.6221 2.44538 16.6892 2.82532 16.7202C3.19655 16.7506 3.6525 16.75 4.2002 16.75V15.25ZM0.25 12.8C0.25 13.3477 0.249417 13.8035 0.279739 14.1747C0.310777 14.5546 0.37789 14.9112 0.549732 15.2485L1.88624 14.5675C1.8401 14.4769 1.79822 14.3396 1.77476 14.0525C1.75058 13.7566 1.75 13.3724 1.75 12.8H0.25ZM2.43229 15.1137C2.19725 14.994 2.00617 14.8028 1.88624 14.5675L0.549732 15.2485C0.813301 15.7657 1.2337 16.1865 1.7513 16.4502L2.43229 15.1137ZM18.25 12.8C18.25 13.3725 18.2495 13.7567 18.2253 14.0526C18.2019 14.3398 18.1601 14.477 18.114 14.5675L19.4505 15.2485C19.6224 14.9111 19.6894 14.5544 19.7204 14.1746C19.7506 13.8035 19.75 13.3476 19.75 12.8H18.25ZM15.8002 16.75C16.3479 16.75 16.8037 16.7506 17.1747 16.7202C17.5546 16.6892 17.9111 16.6221 18.2483 16.4502L17.5673 15.1137C17.4767 15.1599 17.3395 15.2018 17.0525 15.2252C16.7567 15.2494 16.3726 15.25 15.8002 15.25V16.75ZM18.114 14.5675C17.9943 14.8023 17.8028 14.9937 17.5673 15.1137L18.2483 16.4502C18.7654 16.1868 19.1867 15.7662 19.4505 15.2485L18.114 14.5675ZM19.75 7.20001C19.75 6.65241 19.7506 6.19654 19.7204 5.82547C19.6894 5.44562 19.6224 5.08889 19.4505 4.75155L18.114 5.43253C18.1601 5.52301 18.2019 5.66022 18.2253 5.94738C18.2495 6.2433 18.25 6.62751 18.25 7.20001H19.75ZM15.8002 4.75C16.3726 4.75 16.7567 4.75058 17.0525 4.77476C17.3395 4.79821 17.4767 4.84008 17.5673 4.88624L18.2483 3.54973C17.9111 3.37791 17.5545 3.31078 17.1747 3.27974C16.8036 3.24942 16.3479 3.25 15.8002 3.25V4.75ZM19.4505 4.75155C19.1867 4.2338 18.7654 3.81323 18.2483 3.54973L17.5673 4.88624C17.8028 5.00624 17.9943 5.19764 18.114 5.43253L19.4505 4.75155ZM12.449 3.25H7.55078V4.75H12.449V3.25ZM8.61133 1.75H11.3886V0.25H8.61133V1.75ZM7.20224 2.76583C7.2574 2.60034 7.27307 2.55487 7.28822 2.51858L5.90392 1.9409C5.86236 2.04049 5.8267 2.149 5.77921 2.29149L7.20224 2.76583ZM8.61133 0.25C8.46114 0.25 8.34692 0.249508 8.23929 0.257442L8.34957 1.75338C8.38879 1.75049 8.43689 1.75 8.61133 1.75V0.25ZM7.28822 2.51858C7.4697 2.0837 7.8799 1.78801 8.34957 1.75338L8.23929 0.257442C7.20556 0.333649 6.303 0.984568 5.90392 1.9409L7.28822 2.51858ZM7.55078 3.25C7.475 3.25 7.42812 3.24997 7.39303 3.24934C7.35815 3.24871 7.35314 3.24768 7.35982 3.24843L7.19292 4.73912C7.30095 4.75121 7.42733 4.75 7.55078 4.75V3.25ZM5.77921 2.29149C5.7404 2.40793 5.6989 2.52832 5.67618 2.63477L7.14315 2.94783C7.14169 2.95469 7.14225 2.94976 7.15279 2.91616C7.16337 2.88246 7.17822 2.83788 7.20224 2.76583L5.77921 2.29149ZM7.35982 3.24843C7.21292 3.23198 7.1123 3.09238 7.14315 2.94783L5.67618 2.63477C5.46024 3.64669 6.16465 4.62399 7.19292 4.73912L7.35982 3.24843ZM12.7983 2.76586C12.8222 2.83778 12.8371 2.88236 12.8476 2.91597C12.8581 2.94945 12.8587 2.95451 12.8573 2.94783L14.3242 2.63477C14.3015 2.52841 14.2602 2.40843 14.2213 2.29152L12.7983 2.76586ZM12.449 4.75C12.5723 4.75 12.6994 4.75122 12.8074 4.73912L12.6405 3.24843C12.6473 3.24767 12.6422 3.24871 12.6071 3.24934C12.5718 3.24997 12.5247 3.25 12.449 3.25V4.75ZM12.8573 2.94783C12.8881 3.09228 12.7875 3.23197 12.6405 3.24843L12.8074 4.73912C13.8356 4.624 14.5402 3.64679 14.3242 2.63477L12.8573 2.94783ZM14.2213 2.29152C14.1735 2.14821 14.1379 2.0403 14.0964 1.9409L12.7121 2.51858C12.7274 2.55505 12.7434 2.60119 12.7983 2.76586L14.2213 2.29152ZM11.3886 1.75C11.563 1.75 11.6112 1.75049 11.6504 1.75338L11.7607 0.257442C11.6531 0.249508 11.5388 0.25 11.3886 0.25V1.75ZM14.0964 1.9409C13.6973 0.984409 12.7943 0.333637 11.7607 0.257442L11.6504 1.75338C12.1203 1.78802 12.5307 2.08385 12.7121 2.51858L14.0964 1.9409Z"
+                                                                                    fill="#bb4f9d"></path>
+                                                                            </svg>
+                                                                        </label>
+                                                                    </div>
+                                                                    <script>
+                                                                        var loadFile = function (event) {
+                                                                            var image = document.getElementById('output');
+                                                                            image.src = URL.createObjectURL(event.target.files[0]);
+                                                                        };
+                                                                    </script>
+                                                                </div>
+                                                                <div class="up-heading">
+                                                                    <h2>Upload PAN Card Front Side</h2>
+                                                                    <p>
+                                                                        Format: JPEG (.jpg or .jpeg) or PNG format,
+                                                                        Size : Less than 5MB
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 my-5">
+                                                                <button class="primary-btn w-100">
+                                                                    Submit
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="personal-bg">
+                                            <div class="heading">
+                                                <h2>Submit Video Proof</h2>
+                                                <h3>Take a Video of you holding </h3>
+                                                <p>Your Aadhar card or Pan Card</p>
+                                                <p>A note with crypto and 03/05/2022 written on it.</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="row align-items-center">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="upload-wrapper">
+                                                                    <div class="thumb">
+                                                                        <img src="assets/images/ide.jpg" id="output"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="thumb-btn">
+                                                                        <input type="file" accept="image/*" name="image"
+                                                                            id="file" onchange="loadFile(event)"
+                                                                            style="display: none;">
+                                                                        <label class="svg-label" for="file"
+                                                                            style="cursor: pointer;">
+                                                                            <svg width="20" height="17"
+                                                                                viewBox="0 0 20 17" fill="none"
+                                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                                <path
+                                                                                    d="M1.21799 5.09204L1.88624 5.43253L1.21799 5.09204ZM2.0918 4.21799L2.43229 4.88624L2.0918 4.21799ZM2.0918 15.782L2.43229 15.1137L2.0918 15.782ZM1.21799 14.908L0.549732 15.2485H0.549732L1.21799 14.908ZM18.7822 14.908L18.114 14.5675L18.7822 14.908ZM17.9078 15.782L17.5673 15.1137L17.9078 15.782ZM18.7822 5.09204L18.114 5.43253L18.7822 5.09204ZM17.9078 4.21799L18.2483 3.54973L17.9078 4.21799ZM6.49072 2.52866L5.77921 2.29149L6.49072 2.52866ZM6.59607 2.22974L5.90392 1.9409L6.59607 2.22974ZM8.29443 1.00541L8.23929 0.257442L8.29443 1.00541ZM7.27637 3.99377L7.35982 3.24843H7.35982L7.27637 3.99377ZM6.40967 2.7913L5.67618 2.63477L6.40967 2.7913ZM13.5098 2.52869L14.2213 2.29152L13.5098 2.52869ZM13.5908 2.7913L12.8573 2.94783V2.94783L13.5908 2.7913ZM12.724 3.99377L12.6405 3.24843L12.724 3.99377ZM13.4043 2.22974L12.7121 2.51858L13.4043 2.22974ZM11.7056 1.00541L11.6504 1.75338L11.7056 1.00541ZM10 12.25C8.75736 12.25 7.75 11.2426 7.75 10H6.25C6.25 12.0711 7.92893 13.75 10 13.75V12.25ZM7.75 10C7.75 8.75736 8.75736 7.75 10 7.75V6.25C7.92893 6.25 6.25 7.92893 6.25 10H7.75ZM10 7.75C11.2426 7.75 12.25 8.75736 12.25 10H13.75C13.75 7.92893 12.0711 6.25 10 6.25V7.75ZM12.25 10C12.25 11.2426 11.2426 12.25 10 12.25V13.75C12.0711 13.75 13.75 12.0711 13.75 10H12.25ZM18.25 7.20001V12.8H19.75V7.20001H18.25ZM15.8002 15.25H4.2002V16.75H15.8002V15.25ZM1.75 12.8V7.20001H0.25V12.8H1.75ZM4.2002 4.75H15.8002V3.25H4.2002V4.75ZM1.75 7.20001C1.75 6.62758 1.75058 6.24337 1.77476 5.9475C1.79822 5.66038 1.8401 5.5231 1.88624 5.43253L0.549732 4.75155C0.377889 5.08881 0.310777 5.44546 0.279739 5.82535C0.249417 6.19647 0.25 6.65234 0.25 7.20001H1.75ZM4.2002 3.25C3.65251 3.25 3.19656 3.24942 2.82534 3.27974C2.44541 3.31077 2.08861 3.37787 1.7513 3.54973L2.43229 4.88624C2.52281 4.84012 2.66016 4.79822 2.94745 4.77476C3.24344 4.75058 3.62777 4.75 4.2002 4.75V3.25ZM1.88624 5.43253C2.00618 5.19714 2.19728 5.00598 2.43229 4.88624L1.7513 3.54973C1.23366 3.81348 0.813285 4.2343 0.549732 4.75155L1.88624 5.43253ZM4.2002 15.25C3.62779 15.25 3.24345 15.2494 2.94746 15.2252C2.66018 15.2018 2.52282 15.1599 2.43229 15.1137L1.7513 16.4502C2.0886 16.6221 2.44538 16.6892 2.82532 16.7202C3.19655 16.7506 3.6525 16.75 4.2002 16.75V15.25ZM0.25 12.8C0.25 13.3477 0.249417 13.8035 0.279739 14.1747C0.310777 14.5546 0.37789 14.9112 0.549732 15.2485L1.88624 14.5675C1.8401 14.4769 1.79822 14.3396 1.77476 14.0525C1.75058 13.7566 1.75 13.3724 1.75 12.8H0.25ZM2.43229 15.1137C2.19725 14.994 2.00617 14.8028 1.88624 14.5675L0.549732 15.2485C0.813301 15.7657 1.2337 16.1865 1.7513 16.4502L2.43229 15.1137ZM18.25 12.8C18.25 13.3725 18.2495 13.7567 18.2253 14.0526C18.2019 14.3398 18.1601 14.477 18.114 14.5675L19.4505 15.2485C19.6224 14.9111 19.6894 14.5544 19.7204 14.1746C19.7506 13.8035 19.75 13.3476 19.75 12.8H18.25ZM15.8002 16.75C16.3479 16.75 16.8037 16.7506 17.1747 16.7202C17.5546 16.6892 17.9111 16.6221 18.2483 16.4502L17.5673 15.1137C17.4767 15.1599 17.3395 15.2018 17.0525 15.2252C16.7567 15.2494 16.3726 15.25 15.8002 15.25V16.75ZM18.114 14.5675C17.9943 14.8023 17.8028 14.9937 17.5673 15.1137L18.2483 16.4502C18.7654 16.1868 19.1867 15.7662 19.4505 15.2485L18.114 14.5675ZM19.75 7.20001C19.75 6.65241 19.7506 6.19654 19.7204 5.82547C19.6894 5.44562 19.6224 5.08889 19.4505 4.75155L18.114 5.43253C18.1601 5.52301 18.2019 5.66022 18.2253 5.94738C18.2495 6.2433 18.25 6.62751 18.25 7.20001H19.75ZM15.8002 4.75C16.3726 4.75 16.7567 4.75058 17.0525 4.77476C17.3395 4.79821 17.4767 4.84008 17.5673 4.88624L18.2483 3.54973C17.9111 3.37791 17.5545 3.31078 17.1747 3.27974C16.8036 3.24942 16.3479 3.25 15.8002 3.25V4.75ZM19.4505 4.75155C19.1867 4.2338 18.7654 3.81323 18.2483 3.54973L17.5673 4.88624C17.8028 5.00624 17.9943 5.19764 18.114 5.43253L19.4505 4.75155ZM12.449 3.25H7.55078V4.75H12.449V3.25ZM8.61133 1.75H11.3886V0.25H8.61133V1.75ZM7.20224 2.76583C7.2574 2.60034 7.27307 2.55487 7.28822 2.51858L5.90392 1.9409C5.86236 2.04049 5.8267 2.149 5.77921 2.29149L7.20224 2.76583ZM8.61133 0.25C8.46114 0.25 8.34692 0.249508 8.23929 0.257442L8.34957 1.75338C8.38879 1.75049 8.43689 1.75 8.61133 1.75V0.25ZM7.28822 2.51858C7.4697 2.0837 7.8799 1.78801 8.34957 1.75338L8.23929 0.257442C7.20556 0.333649 6.303 0.984568 5.90392 1.9409L7.28822 2.51858ZM7.55078 3.25C7.475 3.25 7.42812 3.24997 7.39303 3.24934C7.35815 3.24871 7.35314 3.24768 7.35982 3.24843L7.19292 4.73912C7.30095 4.75121 7.42733 4.75 7.55078 4.75V3.25ZM5.77921 2.29149C5.7404 2.40793 5.6989 2.52832 5.67618 2.63477L7.14315 2.94783C7.14169 2.95469 7.14225 2.94976 7.15279 2.91616C7.16337 2.88246 7.17822 2.83788 7.20224 2.76583L5.77921 2.29149ZM7.35982 3.24843C7.21292 3.23198 7.1123 3.09238 7.14315 2.94783L5.67618 2.63477C5.46024 3.64669 6.16465 4.62399 7.19292 4.73912L7.35982 3.24843ZM12.7983 2.76586C12.8222 2.83778 12.8371 2.88236 12.8476 2.91597C12.8581 2.94945 12.8587 2.95451 12.8573 2.94783L14.3242 2.63477C14.3015 2.52841 14.2602 2.40843 14.2213 2.29152L12.7983 2.76586ZM12.449 4.75C12.5723 4.75 12.6994 4.75122 12.8074 4.73912L12.6405 3.24843C12.6473 3.24767 12.6422 3.24871 12.6071 3.24934C12.5718 3.24997 12.5247 3.25 12.449 3.25V4.75ZM12.8573 2.94783C12.8881 3.09228 12.7875 3.23197 12.6405 3.24843L12.8074 4.73912C13.8356 4.624 14.5402 3.64679 14.3242 2.63477L12.8573 2.94783ZM14.2213 2.29152C14.1735 2.14821 14.1379 2.0403 14.0964 1.9409L12.7121 2.51858C12.7274 2.55505 12.7434 2.60119 12.7983 2.76586L14.2213 2.29152ZM11.3886 1.75C11.563 1.75 11.6112 1.75049 11.6504 1.75338L11.7607 0.257442C11.6531 0.249508 11.5388 0.25 11.3886 0.25V1.75ZM14.0964 1.9409C13.6973 0.984409 12.7943 0.333637 11.7607 0.257442L11.6504 1.75338C12.1203 1.78802 12.5307 2.08385 12.7121 2.51858L14.0964 1.9409Z"
+                                                                                    fill="#bb4f9d"></path>
+                                                                            </svg>
+                                                                        </label>
+                                                                    </div>
+                                                                    <script>
+                                                                        var loadFile = function (event) {
+                                                                            var image = document.getElementById('output');
+                                                                            image.src = URL.createObjectURL(event.target.files[0]);
+                                                                        };
+                                                                    </script>
+                                                                </div>
+                                                                <div class="up-heading">
+                                                                    <h2>Upload PAN Card Front Side</h2>
+                                                                    <p>
+                                                                        Format: JPEG (.jpg or .jpeg) or PNG format,
+                                                                        Size : Less than 5MB
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 my-5">
+                                                                <button class="primary-btn w-100">
+                                                                    Submit
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-details" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">
+                                        <div class="personal-bg">
+                                            <div class="profile-wrapper">
+                                                <div class="heading">
+                                                    <h1>Edit profile</h1>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-10">
+                                                        <div class="row ">
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        First Name
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="John">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Last Name
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Deo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Email Address
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="johndeo@gmail.com">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Mobile Number
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="9876543210">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        State
+                                                                    </label>
+                                                                    <div class="input-group">
+                                                                        <select class="custom-select" id="" required="">
+                                                                            <option value="">Select Option</option>
+                                                                            <option value="1">TET - Tether</option>
+                                                                            <option value="2">DOG - Doge</option>
+                                                                            <option value="3">ETH - Ethereum</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Zip code
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="johndeo@gmail.com">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        First Name
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="John">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 my-2">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Last Name
+                                                                    </label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Deo">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 my-2">
+                                                                <button class="primary-btn w-100">
+                                                                    Submit
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Script files-->
+    <!-- Bootstrap script -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="assets/vendor/js/slick.min.js"></script>
+    <!-- custom scroll -->
+    <script src="assets/vendor/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+</body>

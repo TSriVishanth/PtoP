@@ -1,0 +1,126 @@
+@import'./variable';
+
+
+header {
+
+    position: relative;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        transition: all ease-in-out 0.6s;
+
+
+    }
+
+    &.add-header-active {
+        &::after {
+            content: '';
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            filter: blur(5px);
+        }
+
+    }
+
+    .nav-logo {
+        margin-right: 45px;
+
+        .navbar-brand {
+            max-width: 172px;
+            margin-left: 0;
+        }
+
+    }
+
+    .item-group-wrapper {
+        @extend .flex-d;
+        width: calc(100% - 172px - 45px);
+
+        .nav-item-wrapper {
+            ul {
+                display: flex;
+                gap: 30px;
+
+                li {
+                    a {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $White;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .select-group {
+        select {
+            background-color: transparent;
+            border: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: $White;
+
+            option {
+                background-color: $primarybg;
+            }
+        }
+    }
+
+    .home-header {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.header-comp-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+    .thumb {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #060A1C;
+        overflow: hidden;
+
+        img {
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+
+    .button-g {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .primary-btn {
+            padding: 5px 35px;
+        }
+    }
+}

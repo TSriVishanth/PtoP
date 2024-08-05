@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P-TO-P | Withdraw Security Verification</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- CUSTOM SCROLL -->
+    <link rel="stylesheet" href="assets/vendor/css/jquery.mCustomScrollbar.css">
+    <!-- SLIDER - CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/slick.css">
+    <link rel="stylesheet" href="assets/vendor/css/slick-theme.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/ptop.css">
+</head>
+
+<body>
+    <main class="main-grid-wrapper container-fluid pt-3" id="sideBar">
+        <div class="side-bar">
+
+            <div class="side-bar-logo d-none d-lg-block">
+                <a href="#">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="text-center trade-side my-3">
+                <a class="primary-btn px-5 ">
+                    TRADE
+                </a>
+                <button class="close-btn d-block d-lg-none" onclick="sideBar()">
+                    x
+                </button>
+            </div>
+            <ul class="side-bar-components">
+                <li class="active">
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" id="opacity" fill="url(#grad1)"
+                                    d="M18.3333 7.09999V3.31666C18.3333 2.14166 17.8 1.66666 16.475 1.66666H13.1083C11.7833 1.66666 11.25 2.14166 11.25 3.31666V7.09166C11.25 8.27499 11.7833 8.74166 13.1083 8.74166H16.475C17.8 8.74999 18.3333 8.27499 18.3333 7.09999Z"
+                                    fill="white" />
+                                <path
+                                    d="M18.3333 16.475V13.1083C18.3333 11.7833 17.8 11.25 16.475 11.25H13.1083C11.7833 11.25 11.25 11.7833 11.25 13.1083V16.475C11.25 17.8 11.7833 18.3333 13.1083 18.3333H16.475C17.8 18.3333 18.3333 17.8 18.3333 16.475Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.75033 7.09999V3.31666C8.75033 2.14166 8.21699 1.66666 6.89199 1.66666H3.52533C2.20033 1.66666 1.66699 2.14166 1.66699 3.31666V7.09166C1.66699 8.27499 2.20033 8.74166 3.52533 8.74166H6.89199C8.21699 8.74999 8.75033 8.27499 8.75033 7.09999Z"
+                                    fill="white" />
+                                <path opacity="0.4" id="opacity" fill="url(#grad1)"
+                                    d="M8.75033 16.475V13.1083C8.75033 11.7833 8.21699 11.25 6.89199 11.25H3.52533C2.20033 11.25 1.66699 11.7833 1.66699 13.1083V16.475C1.66699 17.8 2.20033 18.3333 3.52533 18.3333H6.89199C8.21699 18.3333 8.75033 17.8 8.75033 16.475Z"
+                                    fill="white" />
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#FC466B;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3F5EFB ;stop-opacity:1" />
+                                </linearGradient>
+                            </svg>
+                        </span>
+                        <h1>Dashboard</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" id="opacity"
+                                    d="M15.2747 4.72499L5.49141 14.5083C5.12475 14.875 4.50807 14.825 4.20807 14.3916C3.17474 12.8833 2.56641 11.1 2.56641 9.26664V5.60832C2.56641 4.92499 3.08308 4.14999 3.71641 3.89166L8.35808 1.99166C9.40808 1.55832 10.5748 1.55832 11.6248 1.99166L14.9914 3.36665C15.5497 3.59165 15.6914 4.30832 15.2747 4.72499Z"
+                                    fill="#9CA0C1" />
+                                <path
+                                    d="M16.0587 5.86667C16.6003 5.40833 17.4253 5.79999 17.4253 6.50832V9.26666C17.4253 13.3417 14.467 17.1583 10.4253 18.275C10.1503 18.35 9.85035 18.35 9.56701 18.275C8.38368 17.9417 7.28366 17.3833 6.34199 16.65C5.94199 16.3417 5.90034 15.7583 6.25034 15.4C8.067 13.5417 13.3837 8.125 16.0587 5.86667Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+                        </span>
+                        <h1>Security</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M15 15.7166H14.3667C13.7 15.7166 13.0667 15.975 12.6 16.4416L11.175 17.85C10.525 18.4916 9.46668 18.4916 8.81668 17.85L7.39166 16.4416C6.925 15.975 6.28333 15.7166 5.625 15.7166H5C3.61667 15.7166 2.5 14.6083 2.5 13.2417V4.14998C2.5 2.78331 3.61667 1.675 5 1.675H15C16.3833 1.675 17.5 2.78331 17.5 4.14998V13.2417C17.5 14.6 16.3833 15.7166 15 15.7166Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M10.0003 8.67498C11.0726 8.67498 11.942 7.80571 11.942 6.73335C11.942 5.661 11.0726 4.79167 10.0003 4.79167C8.92792 4.79167 8.05859 5.661 8.05859 6.73335C8.05859 7.80571 8.92792 8.67498 10.0003 8.67498Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M12.2336 12.55C12.9086 12.55 13.3003 11.8 12.9253 11.2417C12.3586 10.4 11.2586 9.83333 10.0003 9.83333C8.74197 9.83333 7.64196 10.4 7.0753 11.2417C6.7003 11.8 7.09198 12.55 7.76698 12.55H12.2336Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+
+                        </span>
+                        <h1>Identification</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M18.125 5.60829C18.125 5.44163 18.0584 5.28332 17.9417 5.16665L14.8417 2.06663C14.6 1.82496 14.2 1.82496 13.9583 2.06663C13.7167 2.30829 13.7167 2.70829 13.9583 2.94996L16 4.99163H2.5C2.15833 4.99163 1.875 5.27497 1.875 5.61663C1.875 5.9583 2.15833 6.24163 2.5 6.24163H15.9917L13.9583 8.27497C13.7167 8.51664 13.7167 8.91663 13.9583 9.1583C14.0833 9.2833 14.2417 9.34166 14.4 9.34166C14.5584 9.34166 14.7167 9.2833 14.8417 9.1583L17.9333 6.06667C17.9917 6.00833 18.0417 5.93333 18.075 5.84999C18.075 5.84166 18.075 5.8333 18.0833 5.82497C18.1083 5.74997 18.125 5.68329 18.125 5.60829Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M17.5 13.7667H4.00833L6.04167 11.7333C6.28333 11.4917 6.28333 11.0917 6.04167 10.85C5.8 10.6083 5.4 10.6083 5.15834 10.85L2.06665 13.9416C2.00832 14 1.95833 14.075 1.925 14.1583C1.925 14.1666 1.92499 14.175 1.91666 14.1833C1.89166 14.25 1.875 14.325 1.875 14.4C1.875 14.5667 1.94164 14.725 2.05831 14.8416L5.15834 17.9417C5.28334 18.0667 5.44164 18.125 5.59998 18.125C5.75831 18.125 5.91667 18.0667 6.04167 17.9417C6.28333 17.7 6.28333 17.3 6.04167 17.0583L3.99999 15.0167H17.5C17.8417 15.0167 18.125 14.7333 18.125 14.3917C18.125 14.05 17.8417 13.7667 17.5 13.7667Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+
+                        </span>
+                        <h1>Transactions</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M2.29152 15.5417C1.94985 15.5417 1.66652 15.2583 1.66652 14.9167V10.1667C1.62485 7.90834 2.46652 5.775 4.03318 4.175C5.59985 2.58334 7.69985 1.70834 9.95818 1.70834C14.5749 1.70834 18.3332 5.46667 18.3332 10.0833V14.8333C18.3332 15.175 18.0499 15.4583 17.7082 15.4583C17.3665 15.4583 17.0832 15.175 17.0832 14.8333V10.0833C17.0832 6.15834 13.8915 2.95834 9.95818 2.95834C8.03318 2.95834 6.24985 3.7 4.92485 5.05C3.59152 6.40834 2.88318 8.21667 2.91652 10.15V14.9083C2.91652 15.2583 2.64152 15.5417 2.29152 15.5417Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M4.95033 10.375H4.84199C3.09199 10.375 1.66699 11.8 1.66699 13.55V15.1167C1.66699 16.8667 3.09199 18.2917 4.84199 18.2917H4.95033C6.70033 18.2917 8.12533 16.8667 8.12533 15.1167V13.55C8.12533 11.8 6.70033 10.375 4.95033 10.375Z"
+                                    fill="#9CA0C1" />
+                                <path id="opacity"
+                                    d="M15.1583 10.375H15.05C13.3 10.375 11.875 11.8 11.875 13.55V15.1167C11.875 16.8667 13.3 18.2917 15.05 18.2917H15.1583C16.9083 18.2917 18.3333 16.8667 18.3333 15.1167V13.55C18.3333 11.8 16.9083 10.375 15.1583 10.375Z"
+                                    fill="#9CA0C1" />
+                            </svg>
+
+
+                        </span>
+                        <h1>Support</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- BANNER -->
+        <section class="security-wrapper">
+            <div class="banner-spring">
+                <img src="assets/images/spring.svg" class="img-fluid" alt="">
+            </div>
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="side-bar-logo d-lg-none d-block">
+                        <a href="#">
+                            <img src="assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="current-logo">
+                        <button class="arrow-btn" onclick="sideBar()">
+                            <img src="assets/images/arrow-left.svg" alt="">
+                        </button>
+                        <h2>Withdraw fiat Security Verification</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <img src="./assets/images/menu.png" alt="">
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="currentpage-wrapper">
+                            <div class="header-comp-details">
+                                <div class="thumb">
+                                    <button>
+                                        <img src="assets/images/profile.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="button-g">
+                                    <button class="primary-btn">
+                                        Wallet
+                                    </button>
+                                    <button>
+                                        <img src="assets/images/setting-2.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="assets/images/notification.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="assets/images/logout.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </header>
+            <div class="main-content-wrapper">
+                <div class="grid-container-wrapper">
+                    <div class="grid-header-container row">
+                        <div class="col-lg-12 my-2">
+                            <div class="btc-balance d-flex w-100 justify-content-between align-items-end flex-wrap">
+                                <div class="">
+                                    <div class="btm-select">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="validatedInputGroupSelect">
+                                                    <img src="assets/images/BitcoinBadge.svg" alt="">
+                                                </label>
+                                            </div>
+                                            <select class="custom-select" id="" required>
+                                                <option value="">BTC - Bitcoin</option>
+                                                <option value="1">TET - Tether</option>
+                                                <option value="2">DOG - Doge</option>
+                                                <option value="3">ETH - Ethereum</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="balance-text">
+                                        <p>Total Balance</p>
+                                        <h1>
+                                            <span>
+                                                <img src="assets/images/BitcoinBadge.svg" alt="">
+                                            </span>
+                                            15.465984
+                                        </h1>
+                                        <h6 class="gen my-3">$ 25456.5454</h6>
+                                    </div>
+                                </div>
+                                <div class="deposit-btn-wrapper">
+                                    <button class="deposit">
+                                        <img src="assets/images/received.svg" alt="">
+                                        <p>Deposit</p>
+                                    </button>
+                                    <button class="withdraw">
+                                        <img src="assets/images/card-add.svg" alt="">
+                                        <p>Withdraw</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 my-2">
+                            <div class="bg-box min-500 p-50">
+                                <div class="row justify-content-center justify-content-lg-between">
+                                    <div class="col-lg-4">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="">
+                                                    SMS Verification Code
+                                                </label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control pr-10" placeholder="000">
+                                                   
+                                                    <div class="eye-btn">
+                                                        <button class="inr-btn">
+                                                            INR
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <small>Please enter the 6-digit code send to 12***6</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">
+                                                    Google Verification Code
+                                                </label>
+                                                <input type="text" class="form-control" placeholder="12354">
+                                            </div>
+                                            <small>Please enter the 6-digit code send to 12***6</small>
+                                            <button class="primary-btn w-100 height-50 my-4">
+                                                Submit
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-4 mt-5">
+                                        <div class="bg-s-box padding-33-25">
+                                            <div class="bg-content">
+                                                <h3>You Receive</h3>
+                                                <h4>294.60 INR</h4>
+                                            </div>
+                                            <div class="bg-content">
+                                                <h3>Payment Method</h3>
+                                                <h4>Bank Transfer</h4>
+                                            </div>
+                                            <div class="bg-content">
+                                                <h3>You Receive</h3>
+                                                <h4>294.60 INR</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Script files-->
+    <!-- Bootstrap script -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="assets/vendor/js/slick.min.js"></script>
+    <!-- custom scroll -->
+    <script src="assets/vendor/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+</body>

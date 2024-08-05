@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P-TO-P | OTP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- SLIDER - CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/slick.css">
+    <link rel="stylesheet" href="assets/vendor/css/slick-theme.css">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/ptop.css">
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="fixed-top">
+    <nav class="container navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <img src="./assets/images/menu.png" alt="">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse home-header" id="navbarSupportedContent">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="explore.html">Explore
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Stats
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="createcollection.html">Create
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="select-group collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <select name="" id="">
+                <option value="">EN/USD</option>
+                <option value="">TR/USD</option>
+                <option value="">UV/USD </option>
+            </select>
+            <div class="btn-group gap-25 pl-3">
+
+                <button class="secondary-btn" data-toggle="modal" data-target="#connect-wallet">
+                    Sign In
+                </button>
+                <button class="primary-btn h-40" data-toggle="modal" data-target="#connect-wallet">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- BANNER -->
+    <section class="security-wrapper">
+        <div class="banner-spring">
+            <img src="assets/images/spring.svg" class="img-fluid" alt="">
+        </div>
+        <!-- LOGIN -->
+        <form action="" class="form-center">
+            <div class="container">
+                <div class="">
+                    <div class="row justify-content-center gap-25">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="heading">
+                                <h1>One Time password?</h1>
+                                <p>Enter the 6 digit code received by <span>j**o@gmail.com</span>
+                                </p>                               
+                            </div>
+                            <div class="seurity-tab-wrapper my-5 ">
+                                <div class="tab-content p-0">
+                                    <div class="mail-wrapper">
+                                        <div class="form-group">                                           
+                                            <div class="otp-form">
+                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            
+                                        </div>                                       
+                                        <button class="primary-btn w-100  my-3">
+                                            Verify
+                                        </button>
+                                        <button class="resend-btn w-100 mt-3"> 
+                                            Resend Code
+                                        </button>
+                                    </div>
+                                </div>                                                             
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!--Script files-->
+    <!-- Bootstrap script -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SLIDER -->
+    <script src="assets/vendor/js/slick.min.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+</body>

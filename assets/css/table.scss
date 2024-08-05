@@ -1,0 +1,100 @@
+@import'./variable';
+
+
+.scrollcustom {
+    max-height: 350px;
+    overflow: hidden;
+
+    .mCSB_scrollTools a+.mCSB_draggerContainer {
+        background-color: #00010c;
+        width: 5px;
+    }
+
+    .mCS-light-2.mCSB_scrollTools .mCSB_draggerRail {
+        background-color: transparent;
+    }
+
+    .mCS-light-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        width: 2px;
+        background-color: rgb(70 93 245);
+    }
+}
+
+.common-table-wrapper {
+    background: linear-gradient(104.85deg, #8C8C8C 0%, #8C8C8C 0%, rgba(70, 70, 68, 0.3) 0.01%, rgba(43, 43, 44, 0) 132.82%);
+    border-radius: 5px;
+    padding: 15px 25px;
+    min-height: 468px;
+    .heading {
+        h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+    }
+
+    table {
+        white-space: nowrap;
+      
+
+        thead {
+            tr {
+                th {
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #9CA0C1;
+                }
+            }
+        }
+
+        tbody {
+        
+
+            tr {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+              
+
+                &:nth-child(1) {
+                    border-top: 1px solid rgba(255, 255, 255, 0.05);
+                }
+
+                &:nth-last-child(1) {
+                    border-bottom: 1px solid transparent;
+                }
+
+                &:hover {
+                    background-color: #08081287;
+                }
+
+                td {
+
+                    padding: 20px 15px;
+
+                    h6 {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #FFFFFF;
+                    }
+
+                    h5 {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #FFFFFF;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        color: #9CA0C1;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
